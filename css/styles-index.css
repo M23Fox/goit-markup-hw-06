@@ -311,7 +311,6 @@ button {
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  opacity: 0.3; 
   cursor: pointer;
 }
 
@@ -332,7 +331,10 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  fill: #000000;    
+  fill: rgba(0, 0, 0, .3); 
+  width: 30px;
+  height: 30px;
+  padding: 7px;   
 }
 
 .modal-icon:hover{
@@ -353,6 +355,16 @@ button {
   
   color: #757575;
 }
+.input-conteiner{
+  position: relative;
+}
+
+.form-icon{
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  
+}
 
 .modal-input{
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -360,6 +372,7 @@ button {
   margin-bottom: 10px;
   min-height: 40px;
   width: 100%;
+  padding-left: 40px;
 
   font-weight: 400;
   font-size: 12px;
@@ -368,6 +381,16 @@ button {
   
   color: rgba(117, 117, 117, 0.5);
   resize: none;
+}
+
+.modal-input:hover + .form-icon,
+.modal-input:focus + .form-icon{
+  fill: var(--hover-color);
+}
+
+.modal-input:hover,
+.modal-input:focus{
+  border-color: var(--hover-color);
 }
 
 .textarea{
@@ -397,7 +420,6 @@ button {
 }
 
 .icon-check{
-  /* position: absolute; */
   display: inline-block;
   border: 2px solid #212121;
   border-radius: 2px;
@@ -413,7 +435,9 @@ button {
   background-image: url(../images/check.svg);
   background-size: contain;
   background-origin: border-box;
-
+  background-repeat: no-repeat;
+  background-position: center;
+ 
 }
 
 .checkbox-label{
@@ -459,6 +483,7 @@ button {
 }
 
 /* Переваги */
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
