@@ -265,6 +265,9 @@ button {
   background-color: #188ce8;
 }
 
+
+/* Modal */
+
 .backdrop{
   position: fixed;
   top: 0;
@@ -341,6 +344,10 @@ button {
   fill: #2196F3;
 }
 
+
+/* Form */
+
+
 .form{
   display: flex;
   flex-direction: column;
@@ -381,7 +388,10 @@ button {
   
   color: rgba(117, 117, 117, 0.5);
   resize: none;
-  
+}
+
+.modal-input:focus{
+  color: #000000;
 }
 
 .modal-input:hover + .form-icon,
@@ -440,8 +450,7 @@ button {
   background-size: contain;
   background-origin: border-box;
   background-repeat: no-repeat;
-  background-position: center;
- 
+  background-position: center; 
 }
 
 .checkbox-label{
@@ -453,8 +462,7 @@ button {
   line-height: calc(24/14);
   letter-spacing: 0.03em;
   
-  color: #757575;
-  
+  color: #757575;  
 }
 
 .contract-link{
@@ -477,8 +485,7 @@ button {
   background: var(--hover-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  color: #FFFFFF;
-  
+  color: #FFFFFF;  
 }
 
 .form-button:hover,
@@ -704,7 +711,9 @@ button {
   fill: currentColor;
 }
 
+
 /* Футер */
+
 
 .footer {
   background: #2f303a;
@@ -789,7 +798,14 @@ button {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: inherit;
+}
 
+.subscr:focus{
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(20/16);
+  letter-spacing: 0.03em;
 }
 
 .subscr-button{
@@ -814,6 +830,7 @@ button {
 .button-span{
   margin-right: 10px;
 }
+
 
 /* portfolio */
 
